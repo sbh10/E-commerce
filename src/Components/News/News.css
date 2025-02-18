@@ -1,0 +1,93 @@
+.main-collection {
+  background: linear-gradient(180deg, #3d8cb7, #e1ffea22 60%);
+}
+.news {
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+  padding: 20px;
+}
+
+.news-left,
+.news-right,
+.new-t-shirt {
+  flex: 1;
+  align-items: center;
+  padding: 0 5%;
+  text-align: center;
+}
+.new-t-shirt {
+  margin-top: 20px;
+}
+
+.h2 {
+  color: #090909;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.new-collection p {
+  color: #171717;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.last-collection p {
+  color: #171717;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#houch-pic,
+#old-men-pic {
+  border-radius: 50% / 20%;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .news {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .news-left,
+  .news-right {
+    padding: 0 10px;
+  }
+
+  .new-collection p,
+  .last-collection p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Écrans petits (mobiles, ~480px) */
+@media (max-width: 480px) {
+  .news {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .news-left,
+  .news-right {
+    padding: 0;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  .new-collection p,
+  .last-collection p {
+    font-size: 1rem;
+  }
+
+  #houch-pic,
+  #old-men-pic {
+    border-radius: 50%;
+    width: 80%;
+  }
+}

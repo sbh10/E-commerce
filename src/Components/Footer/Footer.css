@@ -1,0 +1,41 @@
+.footer-elements {
+  display: flex;
+  gap: 50px; /* espace entre les divs */
+  padding-bottom: 10px;
+  padding-left: 180px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #99f7f7, #bdcfc322 60%);
+  margin: auto;
+  padding: 20px;
+}
+
+.box {
+  padding: 2px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-elements {
+    flex-wrap: wrap; /* Permet d'empiler les éléments si nécessaire */
+    gap: 20px; /* Réduction de l'espace entre les divs */
+    padding-left: 20px; /* Réduction du padding latéral */
+    justify-content: center; /* Centre les éléments horizontalement */
+  }
+}
+
+/* Pour les mobiles (~480px) */
+@media (max-width: 480px) {
+  .footer-elements {
+    flex-direction: column; /* Passe les divs en colonne */
+    padding-left: 10px; /* Réduction encore plus importante du padding */
+    padding-bottom: 20px; /* Augmentation pour une séparation visuelle */
+    gap: 10px; /* Réduction supplémentaire de l'espace */
+    align-items: center; /* Centre les éléments */
+  }
+
+  .box {
+    width: 90%; /* Les divs prennent presque toute la largeur */
+    padding: 5px; /* Légèrement augmenté pour plus de clarté */
+  }
+}

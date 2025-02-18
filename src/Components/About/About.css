@@ -1,0 +1,9 @@
+.about-container {
+  display: flex;
+  float: right;
+  margin: 50px;
+}
+
+#beach-djerba {
+  border-radius: 75px;
+}

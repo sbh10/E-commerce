@@ -1,0 +1,48 @@
+.catalogue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #3d8cb7, #e1ffea22 70%);
+}
+
+.h2 {
+  color: #090909;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.catalogue-item {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.catalogue img {
+  border-radius: 50% / 20%;
+  max-width: 100%;
+}
+
+/* Responsive pour petits écrans (tablettes et téléphones) */
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 1.5rem; /* Réduction de la taille du texte */
+  }
+
+  .catalogue-item {
+    gap: 5px; /* Réduction de l'espacement entre les éléments */
+  }
+}
+
+/* Responsive pour très petits écrans (téléphones) */
+@media (max-width: 480px) {
+  .h2 {
+    font-size: 1.2rem; /* Taille encore plus petite pour les écrans compacts */
+  }
+
+  .catalogue-item {
+    flex-direction: column; /* Les éléments passent en colonne */
+    margin-top: 10px; /* Réduction de l'espace au-dessus */
+  }
+}

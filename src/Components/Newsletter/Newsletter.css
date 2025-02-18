@@ -1,0 +1,72 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+
+.newsletter h1 {
+  color: #e1ffea;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.newsletter p {
+  color: #454545;
+  font-size: 16px;
+  text-align: center;
+}
+
+.newsletter div {
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
+}
+
+.newsletter input {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.newsletter div button {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .newsletter {
+    padding: 0px 60px;
+    gap: 30px;
+  }
+
+  .newsletter div {
+    flex-direction: row; /* Keeps input and button side by side */
+    width: 730px; /* Original width */
+    height: 70px; /* Original height */
+    border-radius: 80px; /* Original border radius */
+    gap: 0; /* Removes gap for inline layout */
+  }
+
+  .newsletter input {
+    width: 500px; /* Original width */
+  }
+
+  .newsletter div button {
+    width: 210px; /* Original width */
+    height: 70px; /* Original height */
+    border-radius: 80px; /* Original border radius */
+  }
+}
