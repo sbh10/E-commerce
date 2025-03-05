@@ -1,0 +1,33 @@
+.about-container {
+  display: flex;
+  float: right;
+  margin: 50px;
+}
+
+#beach-djerba {
+  border-radius: 75px;
+}
+
+@media (max-width: 1024px) {
+  .about-text h2 {
+    font-size: 21px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .about-container img {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 800px) {
+  .about-text h2 {
+    font-size: 19px;
+  }
+  .about-text p {
+    font-size: 12px;
+  }
+  .about-container img {
+    transform: scale(0.8);
+  }
+}

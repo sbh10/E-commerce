@@ -1,0 +1,42 @@
+.main-collection {
+  padding: 20px;
+}
+.news {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: auto;
+}
+
+.news-left,
+.news-right,
+.main-new-t-shirt {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+}
+
+@media (max-width: 1024px) {
+  .main-new-t-shirt,
+  .news-left,
+  .news-right {
+    transform: scale(0.9);
+  }
+  .news {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-new-t-shirt,
+  .news-left,
+  .news-right {
+    transform: scale(0.8);
+  }
+  .news {
+    flex-wrap: wrap;
+  }
+}

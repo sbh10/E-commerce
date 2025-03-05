@@ -1,0 +1,114 @@
+.select-and-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.select-and-add h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.select-size {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.select-size div {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  padding: 6px 11px;
+}
+
+.select-size div:hover {
+  background: #eee;
+  border-color: #bbb;
+}
+
+.select-size div:active {
+  background: #ddd;
+}
+
+.select-and-add button {
+  font-size: 13px;
+  width: 170px;
+  padding: 12px 27px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select-and-add button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.select-and-add button:active {
+  background: linear-gradient(135deg, #e54b64, #ff758c);
+}
+
+@media (max-width: 1024px) {
+  .select-and-add h2 {
+    font-size: 16px;
+  }
+  .select-size {
+    margin: 9px 0;
+  }
+  .select-size div {
+    font-size: 13px;
+    padding: 6px 11px;
+  }
+  .select-and-add button {
+    font-size: 13px;
+    width: 170px;
+    padding: 12px 27px;
+  }
+}
+
+@media (max-width: 800px) {
+  .select-and-add h2 {
+    font-size: 15px;
+  }
+  .select-size {
+    margin: 8px 0;
+  }
+  .select-size div {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .select-and-add button {
+    font-size: 12px;
+    width: 160px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .select-and-add h2 {
+    font-size: 13px;
+  }
+  .select-size {
+    margin: 5px 0;
+  }
+  .select-size div {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+  .select-and-add button {
+    font-size: 10px;
+    width: 135px;
+    padding: 10px 24px;
+  }
+}
