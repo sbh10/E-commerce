@@ -23,7 +23,7 @@ const AddProduct = () => {
 
   const Add_Product = async () => {
     console.log(productDetails);
-    let responseData;
+    let responseData = { success: false, image_url: "" };
     let product = productDetails;
 
     let formData = new FormData();

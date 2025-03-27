@@ -8,6 +8,10 @@
   margin: auto;
 }
 
+.news img {
+  aspect-ratio: 1 / 1.5;
+}
+
 .news-left,
 .news-right,
 .main-new-t-shirt {
